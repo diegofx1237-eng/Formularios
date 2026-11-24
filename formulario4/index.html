@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+<div class="container-formulario">
+    <div class="titulo-container">
+        <h1>Formulário de Cadastro</h1>
+    </div>
+
+    <form action="" method="POST">
+        
+        <!-- Nome e Sobrenome -->
+        <div class="campo">
+            <label class="label-principal">Nome e Sobrenome</label>
+            <div class="inputs-duplos">
+                <div class="sub-campo">
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome" class="legenda">Nome</label>
+                </div>
+                <div class="sub-campo">
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+                    <label for="sobrenome" class="legenda">Sobrenome</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empresa -->
+        <div class="campo">
+            <label for="empresa">Empresa</label>
+            <div class="input-unico">
+                <input type="text" id="empresa" name="empresa">
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="campo">
+            <label for="email">Email</label>
+            <div class="input-unico">
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <!-- Telefone com DDD -->
+        <div class="campo">
+            <label class="label-principal">Telefone com DDD</label>
+            <div class="inputs-telefone">
+                <div class="sub-campo ddd">
+                    <input type="text" id="ddd" name="ddd" maxlength="3" required>
+                    <label for="ddd" class="legenda">DDD</label>
+                </div>
+                <div class="sub-campo telefone">
+                    <input type="text" id="telefone" name="telefone" required>
+                    <label for="telefone" class="legenda">Telefone</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sexo -->
+        <div class="campo">
+            <label for="sexo">Sexo</label>
+            <div class="input-unico">
+                <select id="sexo" name="sexo" required>
+                    <option value="">--Selecione a Opção</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Você é iniciante? -->
+        <div class="campo radio-grupo">
+            <label>Você é iniciante?</label>
+            <div class="opcoes-radio">
+                <label class="radio-label">
+                    <input type="radio" name="iniciante" value="sim" required> Sim
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="iniciante" value="nao" required> Não
+                </label>
+            </div>
+        </div>
+
+        <!-- Botão Enviar -->
+        <div class="botao-container">
+            <button type="submit" class="botao-enviar">Enviar</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

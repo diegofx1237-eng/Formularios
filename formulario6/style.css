@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffd8b1; /* Tom pastel alaranjado da imagem */
+    color: #1a1a1a;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.cabecalho h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #111111;
+}
+
+.cabecalho p {
+    font-size: 13px;
+    margin: 0 0 25px 0;
+    color: #222222;
+    line-height: 1.4;
+}
+
+/* Linha do formulário em duas colunas (rótulo à esquerda e campos à direita) */
+.campo {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.campo > label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #111111;
+    padding-top: 6px;
+}
+
+/* Inputs, Selects e Textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 6px 8px;
+    background-color: #ffffff;
+    border: 1px solid #b5a494;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+select {
+    height: 28px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* Sub-estruturas e grades internas */
+.inputs-duplos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.sub-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.legenda {
+    font-size: 11px;
+    color: #666666;
+    margin-top: 3px;
+}
+
+.endereco-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.linha-inteira {
+    display: flex;
+    flex-direction: column;
+}
+
+.telefone-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+}
+
+/* Bloco Captcha */
+.captcha-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 180px;
+}
+
+.captcha-img-placeholder {
+    background-color: #ffffff;
+    border: 1px solid #b5a494;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #555;
+}
+
+.captcha-input-linha {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-atualizar {
+    background: #f0f0f0;
+    border: 1px solid #b5a494;
+    cursor: pointer;
+    padding: 0 8px;
+    border-radius: 2px;
+}
+
+/* Botão Enviar */
+.botao-linha {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    margin-top: 25px;
+}
+
+.botao-enviar {
+    background-color: #f8f8f8;
+    color: #333333;
+    border: 1px solid #a4a4a4;
+    padding: 6px 25px;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.botao-enviar:hover {
+    background-color: #e5e5e5;
+}
+
+/* Rodapé com aviso */
+.rodape-aviso {
+    margin-top: 35px;
+    font-size: 12px;
+    color: #cc0000;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* Responsividade simples para telas pequenas */
+@media (max-width: 600px) {
+    .campo, .botao-linha {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+```[cite: 10]

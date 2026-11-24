@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserve sua Mesa</title>
+</head>
+<body>
+
+<div class="cabecalho">
+    <h1>Reserve sua Mesa</h1>
+    <h2>Por favor, preencha o formulário abaixo com atenção para que possamos atendê-lo da melhor forma possível. Seja bem-vindo!</h2>
+</div> 
+
+<div class="formulario">
+    <form action="" method="POST">
+        
+        <!-- Nome Completo -->
+        <div class="campo">
+            <label for="nome">Nome Completo</label>
+            <div class="inputs-duplos">
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="" required>
+                    <span class="legenda-input">Nome</span>
+                </div>
+                <div>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="" required>
+                    <span class="legenda-input">Sobrenome</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-mail -->
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="ex: myname@example.com" required>
+        </div>
+
+        <!-- Telefone -->
+        <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="" required>
+        </div>
+
+        <!-- Número de Pessoas -->
+        <div class="campo">
+            <label for="pessoas">Número de Pessoas</label>
+            <input type="number" id="pessoas" name="pessoas" placeholder="" min="1" max="100" required>
+        </div>
+
+        <hr class="divisor">
+
+        <!-- Reserva -->
+        <div class="campo">
+            <label for="reserva">Reserva</label>
+            <input type="date" id="reserva" name="reserva">
+        </div>
+
+        <hr class="divisor">
+
+        <!-- Tipo de Reserva -->
+        <div class="campo">
+            <label for="tipo">Tipo de Reserva</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Please Select</option>
+                <option value="individual">Individual</option>
+                <option value="casal">Casal</option>
+                <option value="familia">Família</option>
+                <option value="grupo">Grupo</option>
+                <option value="evento">Evento</option>
+            </select>
+        </div>
+
+        <!-- Outro -->
+        <div class="campo">
+            <label for="outro">Se "Outro" acima, especifique</label>
+            <input type="text" id="outro" name="outro" placeholder="">
+        </div>
+
+        <!-- Pedidos Especiais -->
+        <div class="campo">
+            <label for="pedidos">Pedidos Especiais</label>
+            <textarea id="pedidos" name="pedidos" rows="4" placeholder=""></textarea>
+        </div>
+
+        <!-- Botão -->
+        <div class="botao">
+            <button class="button" type="submit">Enviar</button>
+        </div>
+
+    </form> 
+</div>
+
+</body>
+</html>
